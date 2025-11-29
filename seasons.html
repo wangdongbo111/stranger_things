@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons | Stranger Things</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .season-container {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .season-card {
+            background: rgba(0, 0, 0, 0.6);
+            border-left: 4px solid var(--primary-red);
+            padding: 2rem;
+            position: relative;
+        }
+
+        .season-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(231, 29, 54, 0.1), transparent);
+            z-index: -1;
+        }
+
+        .season-title {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px var(--primary-red);
+        }
+
+        .season-year {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 1.5rem;
+            font-family: monospace;
+        }
+
+        .season-summary {
+            font-size: 1.1rem;
+            color: #ddd;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .key-events {
+            margin-top: 1rem;
+        }
+
+        .key-events h3 {
+            font-size: 1.2rem;
+            color: var(--neon-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .key-events ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            color: #bbb;
+        }
+
+        .key-events li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">STRANGER THINGS</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="seasons.html" class="active"
+                        style="color: var(--primary-red); text-shadow: 0 0 10px var(--primary-red);">Seasons</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="section-title">The Timeline</h1>
+
+            <div class="season-container">
+
+                <!-- Season 1 -->
+                <div class="season-card">
+                    <h2 class="season-title">Season 1</h2>
+                    <p class="season-year">Set in: 1983 | Released: 2016</p>
+                    <p class="season-summary">
+                        On November 6, 1983, 12-year-old Will Byers vanishes on his way home after a game of Dungeons &
+                        Dragons. His disappearance unearths a dark secret lurking beneath the surface of Hawkins. His
+                        mother, Joyce, becomes convinced he is communicating through the electricity in her home, while
+                        Police Chief Jim Hopper uncovers a conspiracy at Hawkins National Laboratory involving a young
+                        girl with telekinetic powers named Eleven.
+                        <br><br>
+                        Eleven escapes the lab and is found by Will's friends—Mike, Dustin, and Lucas. They hide her in
+                        Mike's basement, and she reveals that Will is trapped in a dark, parallel dimension she calls
+                        the "Upside Down," hunted by a faceless monster they dub the "Demogorgon." Meanwhile, Will's
+                        brother Jonathan and Mike's sister Nancy team up to hunt the monster after it takes Nancy's best
+                        friend, Barb.
+                        <br><br>
+                        The season culminates in a convergence at the middle school. Eleven sacrifices herself to
+                        disintegrate the Demogorgon, vanishing in the process. Joyce and Hopper enter the Upside Down to
+                        rescue Will, pulling him from the alien vines just in time. Life seems to return to normal, but
+                        Will coughs up a slug-like creature, revealing that the connection to the Upside Down is far
+                        from severed.
+                    </p>
+                    <div class="key-events">
+                        <h3>Key Events</h3>
+                        <ul>
+                            <li>Will Byers vanishes into the Upside Down.</li>
+                            <li>Eleven escapes Hawkins Lab.</li>
+                            <li>Joyce communicates with Will through Christmas lights.</li>
+                            <li>The Demogorgon is defeated, but Eleven disappears.</li>
+                        </ul>
+                    </div>
+                    <div class="season-extras">
+                        <div class="extra-item">
+                            <h3>🎵 Iconic Tracks</h3>
+                            <p>"Should I Stay or Should I Go" - The Clash<br>"Heroes" - Peter Gabriel</p>
+                        </div>
+                        <div class="extra-item">
+                            <h3>💡 Trivia</h3>
+                            <p>The Duffer Brothers auditioned 906 boys and 307 girls for the main roles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Season 2 -->
+                <div class="season-card">
+                    <h2 class="season-title">Season 2</h2>
+                    <p class="season-year">Set in: 1984 | Released: 2017</p>
+                    <p class="season-summary">
+                        Set around Halloween 1984, a year after Will's rescue, Hawkins is still recovering. Will is
+                        suffering from "episodes" where he flashes into the Upside Down, seeing a colossal Shadow
+                        Monster (the Mind Flayer) looming over the town. Hopper has been secretly hiding Eleven in a
+                        cabin in the woods to protect her from the government, causing tension between her and Mike, who
+                        calls her on the radio every night.
+                        <br><br>
+                        A new girl, Max, arrives in town, shaking up the boys' dynamic. Dustin finds a strange creature
+                        he names Dart, which grows into a "Demodog" and reveals that the Upside Down is spreading via a
+                        network of tunnels beneath the town. Will becomes possessed by the Mind Flayer, acting as its
+                        spy.
+                        <br><br>
+                        The group realizes they must burn the virus out of Will and close the Gate to kill the hive
+                        mind. Eleven returns from a journey of self-discovery (where she meets another test subject,
+                        Eight) to save her friends. While Joyce overheats Will to expel the entity, Eleven channels her
+                        rage to seal the massive rift at Hawkins Lab. The season ends with the Snow Ball dance, but the
+                        Mind Flayer watches ominously from the Upside Down, still alive.
+                    </p>
+                    <div class="key-events">
+                        <h3>Key Events</h3>
+                        <ul>
+                            <li>Max Mayfield arrives in Hawkins.</li>
+                            <li>Will is possessed by the Mind Flayer.</li>
+                            <li>Dustin raises a "Demodog" named Dart.</li>
+                            <li>Eleven closes the Gate at Hawkins Lab.</li>
+                        </ul>
+                    </div>
+                    <div class="season-extras">
+                        <div class="extra-item">
+                            <h3>🎵 Iconic Tracks</h3>
+                            <p>"Rock You Like a Hurricane" - Scorpions<br>"Time After Time" - Cyndi Lauper</p>
+                        </div>
+                        <div class="extra-item">
+                            <h3>💡 Trivia</h3>
+                            <p>Bob Newby was originally intended to die much earlier in the season.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Season 3 -->
+                <div class="season-card">
+                    <h2 class="season-title">Season 3</h2>
+                    <p class="season-year">Set in: 1985 | Released: 2019</p>
+                    <p class="season-summary">
+                        It's the summer of 1985. The new Starcourt Mall has become the center of life in Hawkins,
+                        putting local stores out of business. Romance is in the air for Mike and Eleven, much to
+                        Hopper's chagrin. However, the Mind Flayer has found a way back. It begins possessing rats and
+                        eventually people, starting with Max's stepbrother, Billy Hargrove, to build a physical body
+                        capable of killing Eleven.
+                        <br><br>
+                        Dustin, Steve, Robin, and Lucas's sister Erica discover a secret Soviet base beneath the mall.
+                        They learn the Russians are trying to reopen the Gate. Meanwhile, Nancy and Jonathan investigate
+                        a story about rabid rats that leads them to the "Flayed."
+                        <br><br>
+                        The season climaxes in the Battle of Starcourt. The kids fight the massive Flesh Monster in the
+                        mall atrium using fireworks. Eleven loses her powers after being bitten. In the Russian bunker
+                        below, Hopper and Joyce try to destroy the machine keeping the Gate open. Billy sacrifices
+                        himself to save Eleven from the Mind Flayer. Hopper appears to perish in the explosion to close
+                        the Gate. The Byers family and a powerless Eleven move away from Hawkins, splitting up the
+                        party.
+                    </p>
+                    <div class="key-events">
+                        <h3>Key Events</h3>
+                        <ul>
+                            <li>The Russians build a secret base under Starcourt Mall.</li>
+                            <li>The Mind Flayer builds a physical body from melted people/rats.</li>
+                            <li>Billy sacrifices himself to save Eleven.</li>
+                            <li>Hopper appears to die closing the Russian gate.</li>
+                        </ul>
+                    </div>
+                    <div class="season-extras">
+                        <div class="extra-item">
+                            <h3>🎵 Iconic Tracks</h3>
+                            <p>"Material Girl" - Madonna<br>"Never Ending Story" - Limahl</p>
+                        </div>
+                        <div class="extra-item">
+                            <h3>💡 Trivia</h3>
+                            <p>The Starcourt Mall was a real abandoned mall in Georgia that was rebuilt for the show.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Season 4 -->
+                <div class="season-card">
+                    <h2 class="season-title">Season 4</h2>
+                    <p class="season-year">Set in: 1986 | Released: 2022</p>
+                    <p class="season-summary">
+                        Spring 1986. The group is scattered: Eleven and the Byers are in California, Hopper is a
+                        prisoner in Russia, and the rest are in Hawkins. A new threat, Vecna, begins gruesomely
+                        murdering teenagers in Hawkins, opening a small gate with each kill. He targets those with
+                        hidden trauma, eventually setting his sights on Max.
+                        <br><br>
+                        In California, Eleven is taken by Dr. Brenner to the "Nina Project" to regain her powers by
+                        reliving her repressed memories. She discovers that Vecna is actually Henry Creel (One), the
+                        orderly who tricked her into freeing him. In Russia, Joyce and Murray launch a daring rescue
+                        mission to break Hopper out of the gulag, fighting a Demogorgon in the process.
+                        <br><br>
+                        The Hawkins group enters the Upside Down to kill Vecna while he is in a trance. Eddie Munson
+                        distracts the Demobats with a metal concert but dies protecting the town. Eleven "piggybacks"
+                        into Max's mind to fight Vecna psychically. They manage to injure him, but Max is clinically
+                        dead for a minute, allowing the fourth gate to open. The four gates tear through Hawkins,
+                        causing a massive "earthquake." Max is left in a coma, and the season ends with the Upside Down
+                        bleeding into the real world, setting the stage for the final battle.
+                    </p>
+                    <div class="key-events">
+                        <h3>Key Events</h3>
+                        <ul>
+                            <li>Vecna's identity is revealed as Henry Creel / One.</li>
+                            <li>Max is targeted by Vecna but saved by music ("Running Up That Hill").</li>
+                            <li>Eddie Munson is framed for the murders.</li>
+                            <li>The Upside Down begins to bleed into Hawkins, causing an "earthquake".</li>
+                        </ul>
+                    </div>
+                    <div class="season-extras">
+                        <div class="extra-item">
+                            <h3>🎵 Iconic Tracks</h3>
+                            <p>"Running Up That Hill" - Kate Bush<br>"Master of Puppets" - Metallica</p>
+                        </div>
+                        <div class="extra-item">
+                            <h3>💡 Trivia</h3>
+                            <p>Vecna's makeup took over 7 hours to apply each day.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stranger Things Fan Site. Not affiliated with Netflix.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+:root {
+    --primary-red: #E71D36;
+    --dark-bg: #010101;
+    --text-color: #E0E0E0;
+    --neon-blue: #2EC4B6;
+    --font-heading: 'Benguiat', serif; 
+    --font-body: 'Inter', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rubik+Glitch&display=swap');
+
+@font-face {
+    font-family: 'StrangerThings';
+    src: local('ITC Benguiat'), local('Benguiat'), url('https://fonts.cdnfonts.com/s/13987/Benguiat.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+body::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 999;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+h1, h2, h3 {
+    font-family: 'StrangerThings', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--primary-red);
+    text-shadow: 0 0 10px var(--primary-red), 0 0 20px var(--primary-red);
+    border: 2px solid var(--primary-red);
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--primary-red) inset, 0 0 20px var(--primary-red);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-red);
+    text-shadow: 0 0 10px var(--primary-red);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #1a0505 0%, #000000 70%);
+    position: relative;
+}
+
+/* Placeholder for Hero Image if available */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1509515837298-2c67e3933363?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    opacity: 0.2;
+    z-index: -1;
+    filter: contrast(1.2) saturate(1.2);
+}
+
+.hero-title {
+    font-size: 6rem;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary-red);
+    text-shadow: 0 0 30px var(--primary-red);
+    animation: flicker 3s infinite alternate;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 2px solid var(--primary-red);
+    color: var(--primary-red);
+    font-family: 'StrangerThings', serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px var(--primary-red);
+}
+
+.cta-button:hover {
+    background: var(--primary-red);
+    color: #000;
+    box-shadow: 0 0 30px var(--primary-red);
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--primary-red),
+        0 0 80px var(--primary-red),
+        0 0 90px var(--primary-red),
+        0 0 100px var(--primary-red),
+        0 0 150px var(--primary-red);
+    }
+    20%, 24%, 55% {       
+        text-shadow: none;
+    }
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: var(--primary-red);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 10px var(--primary-red);
+}
+
+/* Locations Grid */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.location-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+    border: 1px solid transparent;
+}
+
+.location-card:hover {
+    transform: translateY(-10px);
+    background: rgba(231, 29, 54, 0.1);
+    border-color: var(--primary-red);
+}
+
+.location-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.location-card h3 {
+    color: var(--neon-blue);
+    margin-bottom: 1rem;
+}
+
+.character-details {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.character-details p {
+    margin-bottom: 0.5rem;
+}
+
+.character-details strong {
+    color: var(--neon-blue);
+}
+
+.quote {
+    font-style: italic;
+    color: #fff;
+    margin-top: 0.8rem;
+    border-left: 3px solid var(--primary-red);
+    padding-left: 0.8rem;
+}
+
+/* Season Extras */
+.season-extras {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.extra-item {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.extra-item h3 {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.extra-item p {
+    font-size: 0.95rem;
+    color: #aaa;
+}
+
+/* Lore Section */
+.lore-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.lore-item {
+    flex: 1 1 400px;
+    background: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(20,20,20,0.8));
+    padding: 2rem;
+    border-left: 4px solid var(--neon-blue);
+}
+
+.lore-item h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px var(--neon-blue);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #333;
+    margin-top: 4rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    nav ul {
+        display: none; 
+    }
+}

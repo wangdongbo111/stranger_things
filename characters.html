@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters | Stranger Things</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .character-card {
+            background: rgba(20, 20, 20, 0.8);
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(231, 29, 54, 0.4);
+            border-color: var(--primary-red);
+        }
+
+        .character-info {
+            padding: 1.5rem;
+        }
+
+        .character-name {
+            font-family: 'StrangerThings', serif;
+            color: var(--primary-red);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .character-role {
+            color: var(--neon-blue);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .character-bio {
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">STRANGER THINGS</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html" class="active"
+                        style="color: var(--primary-red); text-shadow: 0 0 10px var(--primary-red);">Characters</a></li>
+                <li><a href="seasons.html">Seasons</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="section-title">The Party & Allies</h1>
+
+            <div class="character-grid">
+                <!-- Eleven -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Eleven (Jane Hopper)</h2>
+                        <p class="character-role">The Mage</p>
+                        <p class="character-bio">
+                            Born Jane Ives, "Eleven" was kidnapped at birth and raised in Hawkins National Laboratory,
+                            where she was subjected to cruel experiments to develop her psychokinetic abilities. After
+                            escaping, she found a home with Mike and his friends, and later a father in Jim Hopper. Over
+                            the seasons, El evolves from a frightened, mute child into a powerful young woman trying to
+                            find her identity independent of her powers. She has saved the world multiple times, closing
+                            the Gate and battling the Mind Flayer, but her journey is defined by her desire for a normal
+                            life and the love she holds for her chosen family.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Eggos</p>
+                            <p class="quote">"Friends don't lie."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mike Wheeler -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Mike Wheeler</h2>
+                        <p class="character-role">The Paladin</p>
+                        <p class="character-bio">
+                            The heart and leader of the Party, Mike is defined by his unwavering loyalty and
+                            determination. When Will went missing, Mike was the only one who refused to accept the
+                            worst. His bond with Eleven is the emotional core of the series; he taught her what
+                            friendship and love mean. As he grows older, Mike struggles with the changing dynamics of
+                            his friend group and his relationship with El, but he remains the "Paladin," always ready to
+                            jump into danger to protect those he cares about.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Walkie-Talkie</p>
+                            <p class="quote">"If anyone asks where I am, I've left the country."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dustin Henderson -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Dustin Henderson</h2>
+                        <p class="character-role">The Bard</p>
+                        <p class="character-bio">
+                            Dustin is the diplomat and the scientific genius of the group. With his infectious optimism
+                            and curiosity, he often bridges the gap between the fantastical and the scientific. His
+                            unlikely friendship with Steve Harrington is a fan-favorite dynamic, evolving into a
+                            brotherly bond. Despite often being the comic relief, Dustin's knowledge of D&D lore and
+                            radio technology has been critical in solving the mysteries of the Upside Down, from
+                            identifying the Demogorgon to building Cerebro.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Thinking Cap</p>
+                            <p class="quote">"She's our friend and she's crazy!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lucas Sinclair -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Lucas Sinclair</h2>
+                        <p class="character-role">The Ranger</p>
+                        <p class="character-bio">
+                            Lucas is the realist of the group, often skeptical of the supernatural but fiercely brave
+                            when action is needed. Initially wary of Eleven, he becomes one of her staunchest allies.
+                            His tactical mind and skill with the "Wrist Rocket" have saved the group on numerous
+                            occasions. In later seasons, Lucas struggles with the desire to be popular and fit in with
+                            the basketball team, causing friction with his friends, but he ultimately chooses his
+                            loyalty to the Party and his love for Max.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Wrist Rocket</p>
+                            <p class="quote">"We're talking about the destruction of our world as we know it."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Will Byers -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Will Byers</h2>
+                        <p class="character-role">The Cleric</p>
+                        <p class="character-bio">
+                            Will is the "Boy Who Lived" of Hawkins. His abduction to the Upside Down in 1983 incited the
+                            events of the series. Even after his rescue, Will remains permanently tethered to the dark
+                            dimension, possessing "True Sight" that allows him to sense the Mind Flayer. Sensitive and
+                            artistic, Will struggles with the trauma of his past and the feeling of being left behind as
+                            his friends grow up and start dating. He is the moral compass, often sacrificing his own
+                            happiness for others.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> D&D Wizard Costume</p>
+                            <p class="quote">"It's like... I'm stuck in a dream."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Max Mayfield -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Max Mayfield</h2>
+                        <p class="character-role">The Zoomer</p>
+                        <p class="character-bio">
+                            Maxine "Max" Mayfield arrived in Hawkins as the cool, skateboarding new girl from
+                            California, trying to escape her abusive stepbrother, Billy. She quickly proved herself to
+                            be just as tough and resourceful as the boys, earning her place as the "Zoomer" of the
+                            party. After witnessing Billy's death, Max withdraws into guilt and depression, making her
+                            vulnerable to Vecna's curse. Her bravery in using herself as bait to lure Vecna is one of
+                            the most heroic acts in the series.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Comatose</p>
+                            <p><strong>Signature:</strong> Walkman</p>
+                            <p class="quote">"There's more to life than stupid boys."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jim Hopper -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Jim Hopper</h2>
+                        <p class="character-role">Chief of Police</p>
+                        <p class="character-bio">
+                            Jim Hopper started as a cynical, alcoholic police chief haunted by the death of his
+                            daughter, Sara. The search for Will Byers reignited his sense of purpose. He adopts Eleven,
+                            becoming a fierce and protective father figure. Hopper is a man of action, willing to break
+                            the rules and face insurmountable odds—from fighting Demodogs to surviving a Russian
+                            prison—to keep his town and his daughter safe. His romance with Joyce is a slow-burn
+                            testament to their shared trauma and resilience.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Police Hat / Magnum</p>
+                            <p class="quote">"Mornings are for coffee and contemplation."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Joyce Byers -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Joyce Byers</h2>
+                        <p class="character-role">The Mother</p>
+                        <p class="character-bio">
+                            Joyce Byers is the definition of maternal instinct weaponized. When everyone told her Will
+                            was dead, she strung up Christmas lights to talk to him. She is intuitive, relentless, and
+                            willing to look "crazy" if it means saving her family. Joyce is the glue that holds the
+                            investigation together, often seeing connections that others miss. She has faced the Mind
+                            Flayer, Russian spies, and the grief of losing Bob Newby, yet she remains the bravest person
+                            in Hawkins.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Christmas Lights</p>
+                            <p class="quote">"I don't care if anyone believes me!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Steve Harrington -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Steve Harrington</h2>
+                        <p class="character-role">The Babysitter</p>
+                        <p class="character-bio">
+                            Steve Harrington has the best character arc in the show. Starting as a stereotypical popular
+                            bully, he transforms into "King Steve," the babysitter and protector of the younger kids.
+                            After losing Nancy, he finds a new purpose in fighting the supernatural alongside Dustin.
+                            Brave, selfless, and surprisingly good with a nail-bat, Steve constantly puts himself in
+                            harm's way for his friends. His friendship with Robin Buckley reveals his capacity for
+                            acceptance and genuine connection.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Spiked Bat</p>
+                            <p class="quote">"I'm stealthy, like a ninja."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nancy Wheeler -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Nancy Wheeler</h2>
+                        <p class="character-role">The Journalist</p>
+                        <p class="character-bio">
+                            Nancy Wheeler is a relentless investigator with a nose for the truth. Dissatisfied with the
+                            suburban status quo, she transforms from a studious girl next door into a shotgun-wielding
+                            warrior. Driven by guilt over Barb's death, she exposes Hawkins Lab and the Russian
+                            conspiracy. Nancy is the strategist of the older teens, often leading the charge into the
+                            Upside Down. Her romantic tension with Steve and Jonathan adds a layer of complexity to her
+                            fierce independence.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Revolver</p>
+                            <p class="quote">"We ask for forgiveness, not permission."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jonathan Byers -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Jonathan Byers</h2>
+                        <p class="character-role">The Outsider</p>
+                        <p class="character-bio">
+                            Jonathan Byers is an outsider who observes the world through his camera lens. Deeply
+                            protective of his brother Will and his mother, he is a quiet pillar of strength. He bonds
+                            with Nancy over their shared trauma and desire to expose the truth. While he struggles with
+                            his future and financial responsibilities, Jonathan is always there when it counts,
+                            providing emotional support and physical backup in the fight against the Upside Down.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Camera</p>
+                            <p class="quote">"You shouldn't like things because people tell you you're supposed to."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robin Buckley -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Robin Buckley</h2>
+                        <p class="character-role">The Alternative</p>
+                        <p class="character-bio">
+                            Robin Buckley burst onto the scene as the sarcastic, polyglot co-worker of Steve at Scoops
+                            Ahoy. Her intelligence cracked the Russian code, and her humor kept the "Scoops Troop" sane.
+                            Robin's coming-out scene to Steve is a pivotal moment of vulnerability, solidifying their
+                            platonic soulmate status. She is quirky, anxious, and incredibly brave, proving that you
+                            don't need superpowers to be a hero—just a whiteboard and a sharp mind.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Whiteboard</p>
+                            <p class="quote">"We all die, my strange little child friend."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eddie Munson -->
+                <div class="character-card">
+                    <div class="character-info">
+                        <h2 class="character-name">Eddie Munson</h2>
+                        <p class="character-role">The Dungeon Master</p>
+                        <p class="character-bio">
+                            Eddie Munson, the leader of the Hellfire Club, was the metalhead outcast Hawkins didn't know
+                            it needed. Wrongfully accused of murder, he spent most of Season 4 on the run. However,
+                            Eddie was never the monster they painted him to be. He was a kind-hearted nerd who took the
+                            younger kids under his wing. In the end, he chose not to run away, sacrificing himself in an
+                            epic guitar solo to distract the Demobats and save his friends.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Deceased</p>
+                            <p><strong>Signature:</strong> Electric Guitar</p>
+                            <p class="quote">"This is music!"</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vecna -->
+                <div class="character-card" style="border-color: #500;">
+                    <div class="character-info">
+                        <h2 class="character-name" style="color: #ff0000;">Vecna (Henry Creel)</h2>
+                        <p class="character-role">The Dark Wizard</p>
+                        <p class="character-bio">
+                            Henry Creel, also known as "One," was the first subject of Hawkins Lab. Possessing immense
+                            psychic powers and a nihilistic worldview, he massacred the other children at the lab before
+                            being banished to the Upside Down by Eleven. There, he transformed into Vecna, the puppet
+                            master behind the Mind Flayer. He seeks to merge the Upside Down with the real world by
+                            preying on the trauma and guilt of teenagers to open gates between dimensions.
+                        </p>
+                        <div class="character-details">
+                            <p><strong>Status:</strong> Alive</p>
+                            <p><strong>Signature:</strong> Grandfather Clock</p>
+                            <p class="quote">"Your suffering is almost at an end."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stranger Things Fan Site. Not affiliated with Netflix.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
