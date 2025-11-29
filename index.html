@@ -85,10 +85,56 @@
                 </div>
             </div>
         </section>
+
+        <section id="news">
+            <h2 class="section-title">The Hawkins Post</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">Nov 7, 1983</div>
+                    <h3>Boy Missing: Search Continues</h3>
+                    <p>Will Byers, 12, remains missing. Chief Hopper leads the search party in Mirkwood.</p>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">Oct 31, 1984</div>
+                    <h3>Pumpkin Rot Plagues Farms</h3>
+                    <p>Local farmers report mysterious crop decay. "It's like something poisoned the earth," says
+                        Merrill.</p>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">July 4, 1985</div>
+                    <h3>Fun Fair Tragedy</h3>
+                    <p>Mayor Kline announces cancellation of July 4th events following "mall fire."</p>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">March 26, 1986</div>
+                    <h3>Hellfire Club Suspected</h3>
+                    <p>Police seek Eddie Munson in connection with recent student death. Panic grips Hawkins High.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="newsletter"
+            style="text-align: center; background: linear-gradient(45deg, #1a0505, #000); padding: 5rem 2rem;">
+            <h2 class="section-title" style="font-size: 2.5rem;">Join the Hellfire Club</h2>
+            <p style="margin-bottom: 2rem; color: #ccc;">Get the latest updates from the Upside Down delivered to your
+                inbox.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to the club!');">
+                <input type="email" placeholder="Enter your email..." required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Stranger Things Fan Site. Not affiliated with Netflix.</p>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+            <p>&copy; 2024 Stranger Things Fan Site. Not affiliated with Netflix.</p>
+            <p class="credits">Made with 🩸 in the Upside Down</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

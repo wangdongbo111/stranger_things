@@ -70,8 +70,17 @@
     </header>
 
     <main>
-        <section>
-            <h1 class="section-title">The Party & Allies</h1>
+        <nav class="sub-nav">
+            <ul>
+                <li><a href="#party">The Party</a></li>
+                <li><a href="#adults">The Adults</a></li>
+                <li><a href="#teens">The Teens</a></li>
+                <li><a href="#threats">The Threats</a></li>
+            </ul>
+        </nav>
+
+        <section id="party">
+            <h2 class="section-title">The Party</h2>
 
             <div class="character-grid">
                 <!-- Eleven -->
@@ -200,7 +209,11 @@
                         </div>
                     </div>
                 </div>
+        </section>
 
+        <section id="adults">
+            <h2 class="section-title">The Adults</h2>
+            <div class="character-grid">
                 <!-- Jim Hopper -->
                 <div class="character-card">
                     <div class="character-info">
@@ -242,7 +255,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <section id="teens">
+            <h2 class="section-title">The Teens</h2>
+            <div class="character-grid">
                 <!-- Steve Harrington -->
                 <div class="character-card">
                     <div class="character-info">
@@ -344,6 +362,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="threats">
+            <h2 class="section-title">The Threats</h2>
+            <div class="character-grid">
                 <!-- Vecna -->
                 <div class="character-card" style="border-color: #500;">
                     <div class="character-info">
@@ -369,7 +393,15 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Stranger Things Fan Site. Not affiliated with Netflix.</p>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+            <p>&copy; 2024 Stranger Things Fan Site. Not affiliated with Netflix.</p>
+            <p class="credits">Made with 🩸 in the Upside Down</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
